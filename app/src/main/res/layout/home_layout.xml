@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/home_header_layout"/>
+    <!--轮播图布局-->
+    <RelativeLayout
+        android:id="@+id/home_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/bannerViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bannerViewPager"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!--标题-->
+            <TextView
+                android:id="@+id/bannerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="轮播标题"
+                android:textColor="@color/colorWhite"/>
+
+            <!--小圆点-->
+            <LinearLayout
+                android:id="@+id/bannerPointLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--福利社和至美奖两个大按钮的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/welfare_service"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="福利社"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/best_honor"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:text="至美奖"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <!-- “首页”页面中间5个ImageButton布局“必备”、“必玩”、“热门视频”、“分类”、“游戏中心”-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/home_imageButton_necessary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/home_text_necessary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imageButton_necessary"
+                android:layout_centerInParent="true"
+                android:text="@string/home_text_necessary" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/home_imageButton_must_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/home_text_must_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imageButton_must_play"
+                android:layout_centerInParent="true"
+                android:text="@string/home_text_must_play" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/home_imageButton_hot_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/home_text_hot_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imageButton_hot_video"
+                android:layout_centerInParent="true"
+                android:text="@string/home_text_hot_video" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/home_imageButton_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/home_text_classify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imageButton_classify"
+                android:layout_centerInParent="true"
+                android:text="@string/home_text_classify" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/home_imageButton_game_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/home_text_game_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_imageButton_game_center"
+                android:layout_centerInParent="true"
+                android:text="@string/home_text_game_center" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/home_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

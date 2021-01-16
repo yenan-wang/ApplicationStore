@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">ApplicationStore</string>
+    <string name="sign_activity_name">软件商店每日签到</string>
+    <string name="setting_activity_name">设置</string>
+    <string name="install_activity_name">软件安装详情</string>
+    <string name="more_activity_name">排行榜</string>
+    <string name="search_activity_name">搜索</string>
+
+    <string name="test">测试专用字符</string>
+    <string name="title_home">首页</string>
+    <string name="title_game">游戏</string>
+    <string name="title_soft">软件</string>
+    <string name="title_rank">排行</string>
+    <string name="title_my">我的</string>
+
+    <string name="home_text_necessary">必备</string>
+    <string name="home_text_must_play">必玩</string>
+    <string name="home_text_hot_video">热门视频</string>
+    <string name="home_text_classify">分类</string>
+    <string name="home_text_game_center">游戏中心</string>
+
+    <string name="button_jingdong">京东</string>
+    <string name="button_my">签到</string>
+    <string name="search">搜索</string>
+
+    <string name="install">安装</string>
+    <string name="game_firstFragment_text">精选的Fragment</string>
+
+    <string name="game_firstFragment_text_onlineGame">网游</string>
+    <string name="game_firstFragment_text_standAlone">单机</string>
+    <string name="game_firstFragment_text_smallGame">小游戏</string>
+    <string name="game_firstFragment_text_indieGame">独立游戏</string>
+    <string name="game_firstFragment_text_latest">最新</string>
+
+    <string name="user_name">用户0123456789</string>
+    <string name="user_account">账号：187******77</string>
+    <string name="text_installHasGift">安装有礼</string>
+    <string name="text_winScore">赢取积分</string>
+    <string name="text_scoreStore">积分商城</string>
+    <string name="text_latestActivity">最新活动</string>
+
+    <string name="my_score">积分</string>
+    <string name="my_applicationUpdate">应用更新</string>
+    <string name="my_downloadManage">下载管理</string>
+    <string name="my_applicationUninstall">应用卸载</string>
+    <string name="my_myAppointment">我的预约</string>
+    <string name="my_helpAndFeedback">帮助与反馈</string>
+</resources>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- “我的”页面顶部“搜索”、“扫一扫”、“设置”布局-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/my_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/my_scan"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search" />
+
+        <ImageButton
+            android:id="@+id/my_scan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/my_setting"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/scan" />
+
+        <ImageButton
+            android:id="@+id/my_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting" />
+    </RelativeLayout>
+    <!-- “我的”页面用户信息部分布局-->
+    <RelativeLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <ImageButton
+            android:id="@+id/user_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/user_photo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/user_photo">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/user_name"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/user_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_marginLeft="10dp"
+                android:text="@string/user_account"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:text="@string/button_my" />
+    </RelativeLayout>
+    <!-- “我的”页面4个布局“安装有礼”、“赢取积分”、“积分商城”、“最新活动”-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/my_imageButton_installHasGift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_text_installHasGift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_imageButton_installHasGift"
+                android:layout_centerInParent="true"
+                android:text="@string/text_installHasGift" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/my_imageButton_winScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_text_winScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_imageButton_winScore"
+                android:layout_centerInParent="true"
+                android:text="@string/text_winScore" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/my_imageButton_scoreStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_text_scoreStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_imageButton_scoreStore"
+                android:layout_centerInParent="true"
+                android:text="@string/text_scoreStore" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/my_imageButton_latestActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_text_latestActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_imageButton_latestActivity"
+                android:layout_centerInParent="true"
+                android:text="@string/text_latestActivity" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- “我的”页面6个布局“积分”、“应用更新”、“下载管理”、“应用卸载”、“我的预约”、“帮助与反馈”-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!--“积分”布局-->
+        <RelativeLayout
+            android:id="@+id/my_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_listImageOne"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_listTextLeftOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_listImageOne"
+                android:text="@string/my_score"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/my_listTextRightOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/my_listMoreOne"
+                android:text="80" />
+
+            <ImageView
+                android:id="@+id/my_listMoreOne"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/more_gray" />
+        </RelativeLayout>
+
+        <!--“应用更新”布局-->
+        <RelativeLayout
+            android:id="@+id/my_applicationUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_listImageTwo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_listTextLeftTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_listImageTwo"
+                android:text="@string/my_applicationUpdate"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/my_listTextRightTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/my_listMoreTwo"
+                android:text="所有应用都是最新版本" />
+
+            <ImageView
+                android:id="@+id/my_listMoreTwo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/more_gray" />
+        </RelativeLayout>
+
+        <!--“下载管理”布局-->
+        <RelativeLayout
+            android:id="@+id/my_downloadManage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_listImageThree"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_listTextLeftThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_listImageThree"
+                android:text="@string/my_downloadManage"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/my_listTextRightThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/my_listMoreThree" />
+
+            <ImageView
+                android:id="@+id/my_listMoreThree"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/more_gray" />
+        </RelativeLayout>
+
+        <!--“应用卸载”布局-->
+        <RelativeLayout
+            android:id="@+id/my_applicationUninstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_listImageFour"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_listTextLeftFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_listImageFour"
+                android:text="@string/my_applicationUninstall"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/my_listTextRightFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/my_listMoreFour" />
+
+            <ImageView
+                android:id="@+id/my_listMoreFour"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/more_gray" />
+        </RelativeLayout>
+
+        <!--“我的预约”布局-->
+        <RelativeLayout
+            android:id="@+id/my_myAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_listImageFive"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_listTextLeftFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_listImageFive"
+                android:text="@string/my_myAppointment"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/my_listTextRightFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/my_listMoreFive" />
+
+            <ImageView
+                android:id="@+id/my_listMoreFive"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/more_gray" />
+        </RelativeLayout>
+
+        <!--“帮助与反馈”布局-->
+        <RelativeLayout
+            android:id="@+id/my_helpAndFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/my_listImageSix"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/my_listTextLeftSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_listImageSix"
+                android:text="@string/my_helpAndFeedback"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/my_listTextRightSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/my_listMoreSix" />
+
+            <ImageView
+                android:id="@+id/my_listMoreSix"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/more_gray" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_gray"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_game"
+        android:icon="@drawable/game_gray"
+        android:title="@string/title_game" />
+
+    <item
+        android:id="@+id/navigation_soft"
+        android:icon="@drawable/soft_gray"
+        android:title="@string/title_soft" />
+
+    <item
+        android:id="@+id/navigation_rank"
+        android:icon="@drawable/rank_gray"
+        android:title="@string/title_rank" />
+
+    <item
+        android:id="@+id/navigation_my"
+        android:icon="@drawable/my_gray"
+        android:title="@string/title_my" />
+</menu>
